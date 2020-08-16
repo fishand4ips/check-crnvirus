@@ -13,9 +13,9 @@
     --previewShadow: #111921;
     --clr-settings-note: white;
 
+    --table-text-clr: white;
+    --progress-color: #1b3f75;
+
     --buttonColor: #17a2b8;
 }
 
-.table {
-    color: white;
-}
