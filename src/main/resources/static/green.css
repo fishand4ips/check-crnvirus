@@ -1,0 +1,21 @@
+:root {
+    --mainColor: #606B56;
+    --secondaryColor: #515a48;
+
+    --borderColor: #161914;
+
+    --mainText: #fff;
+    --secondaryText: 160 F0F;
+
+    --themeDotBorder: #FFF;
+
+    --previewBg: rgba(81, 90, 72, 0.8);
+    --previewShadow: #2a2f25;
+    --clr-settings-note: white;
+
+    --buttonColor: #669966;
+}
+
+.table {
+    color: white;
+}
