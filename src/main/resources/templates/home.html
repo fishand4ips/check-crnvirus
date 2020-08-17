@@ -15,6 +15,7 @@
     <link href="../static/default.css" rel="stylesheet" th:href="@{default.css}" type="text/css">
     <link href="../static/search.css" rel="stylesheet" th:href="@{search.css}" type="text/css">
     <link href="../static/scroll-indicator.css" rel="stylesheet" th:href="@{scroll-indicator.css}" type="text/css">
+    <link href="../static/sort-table.css" rel="stylesheet" th:href="@{sort-table.css}" type="text/css">
     <link href="" id="theme-style" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -51,24 +52,29 @@
 
         <input type="text" id="search" onkeyup="searchCountry()" placeholder="Search for country..." title="Type in a country">
 
-        <table id="search-stats" class="table">
+        <table class="table" id="search-stats">
+            <thead>
             <tr>
                 <th>State</th>
                 <th>Country</th>
                 <th>Total cases reported</th>
                 <th>Changes since last day</th>
             </tr>
+            </thead>
+            <tbody>
             <tr th:each="locationStat : ${locationStats}">
                 <td th:text="${locationStat.state}"></td>
                 <td th:text="${locationStat.country}"></td>
                 <td th:text="${locationStat.latestTotalCases}">0</td>
                 <td th:text="${locationStat.diffFromPreviousDay}">0</td>
             </tr>
+            </tbody>
         </table>
     </div>
 </section>
 <script src="../static/theme-color.js" th:src="@{theme-color.js}" type="text/javascript"></script>
 <script src="../static/search.js" th:src="@{search.js}" type="text/javascript"></script>
 <script src="../static/scroll-indicator.js" th:src="@{scroll-indicator.js}" type="text/javascript"></script>
+<script src="../static/sort-table.js" th:src="@{sort-table.js}" type="text/javascript"></script>
 </body>
 </html>
