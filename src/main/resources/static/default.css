@@ -458,5 +458,18 @@ h6 {
 }
 
 
+@media all and (max-width: 785px) {
+    h1 {
+        font-size: 33px;
+    }
+}
+
+@media all and (max-width: 785px) {
+    h4 {
+        font-size: 12px;
+        font-weight: normal
+    }
+}
+
 
 

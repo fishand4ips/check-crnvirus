@@ -31,3 +31,9 @@ th.sorted[data-order="-1"]::after {
 th.sorted[data-order="1"]::after {
     content: "▲";
 }
+
+@media all and (max-width: 785px) {
+    table#search-stats {
+        font-size: 11px;
+    }
+}
