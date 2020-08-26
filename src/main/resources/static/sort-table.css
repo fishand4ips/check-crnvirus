@@ -36,4 +36,9 @@ th.sorted[data-order="1"]::after {
     table#search-stats {
         font-size: 11px;
     }
+
+    #search {
+        font-size: 14px;
+    }
+
 }
