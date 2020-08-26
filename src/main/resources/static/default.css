@@ -39,11 +39,6 @@ h1, h2, h3, h4, h5, h6, strong {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: #17a2b8;
-}
-
 h1 {
     font-size: 56px;
 }
@@ -75,18 +70,6 @@ h6 {
     overflow: auto;
 }
 
-#dot-1 {
-    background-color: #FC6058;
-}
-
-#dot-2 {
-    background-color: #FEC02F;
-}
-
-#dot-3 {
-    background-color: #2ACA3E;
-}
-
 .left-column {
     grid-area: left-column;
     padding-top: 50px;
@@ -108,7 +91,6 @@ h6 {
 
     cursor: pointer;
 }
-
 
 .theme-dot:hover {
     border-width: 5px;
@@ -137,15 +119,6 @@ h6 {
     color: var(--clr-settings-note);
 }
 
-.right-column {
-    grid-area: right-column;
-    display: grid;
-    align-content: center;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 #theme-options-wrapper {
     display: flex;
     justify-content: center;
@@ -170,7 +143,6 @@ h6 {
 .table {
     color: var(--table-text-clr);
 }
-
 
 @media all and (max-width: 785px) {
     h1 {
